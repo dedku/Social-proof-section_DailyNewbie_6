@@ -66,6 +66,16 @@ main {
     margin: auto;
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 45%;
+}
+
+a {
+    text-decoration: none;
+}
+
 /* Classes */
 
 .flex-row,
@@ -232,8 +242,14 @@ main {
 .attribution {
     font-size: 11px;
     text-align: center;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid gray;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: #fff;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(228, 89%, 44%);
 }
