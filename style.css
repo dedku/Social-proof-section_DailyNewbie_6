@@ -39,7 +39,7 @@ White: hsl(0, 0%, 100%)
     --neutral-light-magenta: hsl(300, 24%, 96%);
     --neutral-white: hsl(0, 0%, 100%);
     --font-size: 15px;
-    --margin-rating: 75px;
+    --margin-rating: 50px;
     --margin-buyes: 50px;
 }
 
@@ -50,7 +50,7 @@ White: hsl(0, 0%, 100%)
 }
 
 body {
-    margin: 0;
+    margin: auto;
     top: 0;
     font-family: 'League Spartan', sans-serif;
     font-size: var(--font-size);
@@ -58,6 +58,8 @@ body {
     background-position: right bottom, left top;
     background-repeat: no-repeat, no-repeat;
     height: 100vh;
+    max-width: 1440px;
+
 }
 
 main {
@@ -115,7 +117,7 @@ a {
 }
 
 .w-100 {
-    width: 100%;
+    max-width: 100%;
 }
 
 .w-70 {
@@ -128,8 +130,10 @@ a {
 
 .rating {
     background-color: var(--neutral-light-magenta);
-    padding: 5px 80px;
+    padding: 5px;
     border-radius: 10px;
+    min-width: 400px;
+    max-width: 450px;
 }
 
 .rating:nth-child(2) {
@@ -144,7 +148,7 @@ a {
 
 .article-style {
     background-color: var(--primary-magenta);
-    padding: 20px 50px;
+    padding: 10px 30px;
     border-radius: 10px;
     min-width: 200px;
     max-width: 100%;
@@ -199,10 +203,10 @@ a {
 }
 
 .fonts {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 400;
     color: var(--neutral-light-magenta);
-    line-height: 1.5rem;
+    line-height: 1.2rem;
 
 }
 
@@ -216,23 +220,17 @@ a {
     height: auto;
 }
 
-#content-top {
-    /* justify-content: space-between; */
-    gap: 100px;
-    /* align-content: space-between; */
-}
-
 #main-title {
-    font-size: 3.5rem;
-    width: 400px;
+    font-size: 3rem;
+    max-width: 350px;
     color: var(--primary-magenta);
     margin-bottom: 10px;
     font-weight: 700;
 }
 
 #main-paragraph {
-    font-size: 1.4rem;
-    width: 550px;
+    font-size: 1.2rem;
+    max-width: 450px;
     color: var(--neutral-dark-magenta);
     font-weight: 400;
     line-height: 1.5rem;
@@ -256,7 +254,7 @@ a {
     border-bottom: #fff;
     position: absolute;
     bottom: 0;
-    right: 50%;
+    right: 42%;
 }
 
 .attribution a {
