@@ -54,7 +54,7 @@ body {
     top: 0;
     font-family: 'League Spartan', sans-serif;
     font-size: var(--font-size);
-    background-image: url(./images/bg-pattern-bottom-desktop.svg), url(./images/bg-pattern-top-desktop.svg);
+    background-image: url(Social-proof-section_DailyNewbie_6/images/bg-pattern-bottom-desktop.svg), url(Social-proof-section_DailyNewbie_6/images/bg-pattern-top-desktop.svg);
     background-position: right bottom, left top;
     background-repeat: no-repeat, no-repeat;
     height: 100vh;
