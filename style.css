@@ -39,6 +39,8 @@ White: hsl(0, 0%, 100%)
     --neutral-light-magenta: hsl(300, 24%, 96%);
     --neutral-white: hsl(0, 0%, 100%);
     --font-size: 15px;
+    --margin-rating: 75px;
+    --margin-buyes: 50px;
 }
 
 *,
@@ -52,17 +54,23 @@ body {
     top: 0;
     font-family: 'League Spartan', sans-serif;
     font-size: var(--font-size);
+    background-image: url(/images/bg-pattern-bottom-desktop.svg), url(/images/bg-pattern-top-desktop.svg);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, no-repeat;
+    height: 100vh;
 }
 
 main {
-    width: 80%;
+    padding-top: 80px;
+    width: 70%;
     margin: auto;
 }
+
+/* Classes */
 
 .flex-row,
 .flex-col {
     display: flex;
-    align-items: center;
 }
 
 .flex-col {
@@ -71,8 +79,156 @@ main {
 
 .flex-row {
     flex-direction: row;
+
+    align-items: center;
 }
 
+.justify-center {
+    justify-content: center;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.rating {
+    background-color: var(--neutral-light-magenta);
+    padding: 5px;
+    border-radius: 10px;
+    width: 500px;
+}
+
+.rating:nth-child(2) {
+    margin-right: var(--margin-rating);
+    transition: margin-right .3s cubic-bezier(.62, .29, .7, .45);
+}
+
+.rating:nth-child(1) {
+    margin-right: calc(var(--margin-rating) * 2);
+    transition: margin-right .4s cubic-bezier(.62, .29, .7, .45);
+}
+
+.article-style {
+    background-color: var(--primary-magenta);
+    padding: 20px 50px;
+    border-radius: 10px;
+}
+
+.article-style:nth-child(2) {
+    margin-top: var(--margin-buyes);
+    transition: margin-top .3s cubic-bezier(.62, .29, .7, .45) .5s;
+}
+
+.article-style:nth-child(3) {
+    margin-top: calc(var(--margin-buyes) * 2);
+    transition: margin-top .3s cubic-bezier(.62, .29, .7, .45) .5s;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-0 {
+    margin-top: 0px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.image-auto {
+    width: 45px;
+    border-radius: 50%;
+}
+
+.t-white {
+    color: var(--neutral-white);
+}
+
+.t-pink {
+    color: var(--primary-pink);
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fonts {
+    font-size: 1rem;
+    font-weight: 400;
+    width: 300px;
+    color: var(--neutral-light-magenta);
+    line-height: 1.5rem;
+}
+
+/* ID's */
+#content {
+    width: 100%;
+    height: auto;
+}
+
+#content-top {
+    /* justify-content: space-between; */
+    gap: 100px;
+    /* align-content: space-between; */
+}
+
+#main-title {
+    font-size: 60px;
+    width: 400px;
+    color: var(--primary-magenta);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+#main-paragraph {
+    font-size: 1.4rem;
+    width: 550px;
+    color: var(--neutral-dark-magenta);
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+#ratings {
+    font-weight: 700;
+    color: var(--primary-magenta);
+    gap: 20px;
+    padding-top: 50px;
+}
+
+/* Frontend mentor styles */
 .attribution {
     font-size: 11px;
     text-align: center;
