@@ -62,8 +62,7 @@ body {
 
 main {
     padding-top: 80px;
-    width: 70%;
-    margin: auto;
+
 }
 
 footer {
@@ -125,15 +124,18 @@ a {
     width: 100%;
 }
 
+.w-70 {
+    width: 70%;
+}
+
 .gap-20 {
     gap: 20px;
 }
 
 .rating {
     background-color: var(--neutral-light-magenta);
-    padding: 5px;
+    padding: 5px 80px;
     border-radius: 10px;
-    width: 500px;
 }
 
 .rating:nth-child(2) {
@@ -150,6 +152,9 @@ a {
     background-color: var(--primary-magenta);
     padding: 20px 50px;
     border-radius: 10px;
+    min-width: 200px;
+    max-width: 100%;
+    flex-shrink: 1;
 }
 
 .article-style:nth-child(2) {
@@ -160,6 +165,10 @@ a {
 .article-style:nth-child(3) {
     margin-top: calc(var(--margin-buyes) * 2);
     transition: margin-top .3s cubic-bezier(.62, .29, .7, .45) .5s;
+}
+
+.m-auto {
+    margin: auto;
 }
 
 .mb-5 {
@@ -198,9 +207,13 @@ a {
 .fonts {
     font-size: 1rem;
     font-weight: 400;
-    width: 300px;
     color: var(--neutral-light-magenta);
     line-height: 1.5rem;
+
+}
+
+.shrink {
+    flex-shrink: 1;
 }
 
 /* ID's */
@@ -216,7 +229,7 @@ a {
 }
 
 #main-title {
-    font-size: 60px;
+    font-size: 3.5rem;
     width: 400px;
     color: var(--primary-magenta);
     margin-bottom: 10px;
@@ -234,13 +247,12 @@ a {
 #ratings {
     font-weight: 700;
     color: var(--primary-magenta);
-    gap: 20px;
     padding-top: 50px;
 }
 
 /* Frontend mentor styles */
 .attribution {
-    font-size: 11px;
+    font-size: 0.8rem;
     text-align: center;
     background-color: #fff;
     padding: 15px;
